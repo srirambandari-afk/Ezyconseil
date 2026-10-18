@@ -1,0 +1,22 @@
+{
+  "name": "ezyconseil-backend",
+  "version": "1.0.0",
+  "description": "This is the Ezyconseil Backend server ",
+  "license": "ISC",
+  "author": "Shriram Bhandari",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "fs": "^0.0.1-security",
+    "nodemon": "^1.14.10",
+    "validator": "^13.15.35",
+    "xlsx": "^0.18.5"
+  }
+}
