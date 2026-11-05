@@ -1,3 +1,3 @@
-const fetch_url = "http://localhost:3456"
+const fetch_url = "https://ezyconseil.onrender.com"
 
 export default fetch_url
