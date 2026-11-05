@@ -24,7 +24,7 @@ const AdminMenu = () => {
     </Link>
    <Link to = '/admin'>
       <button className=" w-full text-left px-4 py-2 hover:bg-gray-100">
-        Consultant Dashboard
+        Admin Dashboard
     </button>
    </Link>
    <Link to ='/bills'>
