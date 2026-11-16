@@ -1,20 +1,30 @@
+<<<<<<< HEAD
 import React, { useState } from 'react'
 import { FormContextConsume } from '../../Context/FormContext'
 import {useNavigate} from 'react-router-dom'
 import { CheckCircle } from 'lucide-react';
+=======
+import React from 'react'
+import { FormContextConsume } from '../../Context/FormContext'
+import {useNavigate} from 'react-router-dom'
+>>>>>>> 6f860581c5d5226f43cb82da34cb8e133493e9bf
 
 
 const ConsultantRegistration = () => {
       
      const navigate = useNavigate()
+<<<<<<< HEAD
 
      const [inputType, setInputType] = useState('text')
 
      const [fileSelected, setFileSelected] = useState(false)
+=======
+>>>>>>> 6f860581c5d5226f43cb82da34cb8e133493e9bf
       
      
      const{setConsultInfo} = FormContextConsume()
 
+<<<<<<< HEAD
      const convertToBase64 = (file)=>{
 
       return new Promise ((resolve)=>{
@@ -42,10 +52,16 @@ const ConsultantRegistration = () => {
      
 
     const handleSubmit = async(e)=>{
+=======
+     
+
+    const handleSubmit = (e)=>{
+>>>>>>> 6f860581c5d5226f43cb82da34cb8e133493e9bf
         e.preventDefault()
        const data =  Object.fromEntries(new FormData(e.target))
 
        
+<<<<<<< HEAD
        if (data.resume instanceof File){
 
         alert ("file has been uploaded!!!")
@@ -54,6 +70,9 @@ const ConsultantRegistration = () => {
 
 
        }
+=======
+
+>>>>>>> 6f860581c5d5226f43cb82da34cb8e133493e9bf
        
        
 
@@ -70,6 +89,7 @@ const ConsultantRegistration = () => {
       
     }
 
+<<<<<<< HEAD
     const handleUpload = (e)=>{
 
       setInputType('file')
@@ -78,6 +98,8 @@ const ConsultantRegistration = () => {
 
     }
 
+=======
+>>>>>>> 6f860581c5d5226f43cb82da34cb8e133493e9bf
 
   return (
 
@@ -97,6 +119,7 @@ const ConsultantRegistration = () => {
         <input type="text" id='experience' name='experience' type='number' className='border' />
         <label htmlFor="expertise">Expertise:</label>
         <input type="text" id = 'expertise' name='expertise' className='border' />
+<<<<<<< HEAD
         <label htmlfor='resume' onClick = {()=>setInputType('text')} >Proof of expertise/Resume:</label>
         <div className='flex flex-col gap-3 ' >
            <textarea name="resume" id="resume" name='resume' className='border h-32' disabled = {inputType == 'file'}  />
@@ -128,6 +151,11 @@ const ConsultantRegistration = () => {
        
         
         
+=======
+        <label htmlfor='resume'>Proof of expertise/Resume:</label>
+        <textarea name="resume" id="resume" name='resume' className='border h-32'/>
+        <div className='col-span-2 flex justify-center'><button className='border px-3 bg-gray-200' type="submit">Submit</button></div>
+>>>>>>> 6f860581c5d5226f43cb82da34cb8e133493e9bf
       </form>
         </div>
       
